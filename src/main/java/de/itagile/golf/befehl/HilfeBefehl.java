@@ -19,4 +19,8 @@ public class HilfeBefehl implements Befehl {
 		return "dann zeige ich Dir das hier";
 	}
 
+	@Override
+	public String abkuerzung() {
+		return "H";
+	}
 }

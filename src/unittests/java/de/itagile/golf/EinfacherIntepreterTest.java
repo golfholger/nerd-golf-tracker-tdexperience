@@ -16,20 +16,23 @@ import de.itagile.golf.operation.Schlag;
 
 public class EinfacherIntepreterTest {
 
-	private Interpreter interpreter = new EinfacherInterpreter();
-	
-	private static Stream<Arguments> schlagParameter() {
-	    return Stream.of(
-	      Arguments.of("Schlage Ball", Schlag.class),
-	      Arguments.of("Nächstes Loch", Lochwechsel.class),
-	      Arguments.of("Hilfe", Hilfe.class),
-	      Arguments.of("Foo", Hilfehinweis.class)
-	    );
-	}
-	
-	@ParameterizedTest
-	@MethodSource("schlagParameter")
-	public void interpretiertBefehle(String befehl, Class<Operation> operation) throws Exception {
-		assertThat(interpreter.interpretiere(befehl), instanceOf(operation));
-	}
+    private Interpreter interpreter = new EinfacherInterpreter();
+
+    private static Stream<Arguments> schlagParameter() {
+        return Stream.of(
+                Arguments.of("Schlage Ball", Schlag.class),
+                Arguments.of("Nächstes Loch", Lochwechsel.class),
+                Arguments.of("Hilfe", Hilfe.class),
+                Arguments.of("Foo", Hilfehinweis.class),
+                Arguments.of("SB", Schlag.class),
+                Arguments.of("NL", Lochwechsel.class),
+                Arguments.of("H", Hilfe.class)
+        );
+    }
+
+    @ParameterizedTest
+    @MethodSource("schlagParameter")
+    public void interpretiertBefehle(String befehl, Class<Operation> operation) throws Exception {
+        assertThat(interpreter.interpretiere(befehl), instanceOf(operation));
+    }
 }

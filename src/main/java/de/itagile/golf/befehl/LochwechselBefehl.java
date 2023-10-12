@@ -19,4 +19,9 @@ public class LochwechselBefehl implements Befehl {
 		return "dann zähle ich für das nächste Loch mit";
 	}
 
+	@Override
+	public String abkuerzung() {
+		return "NL";
+	}
+
 }

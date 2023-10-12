@@ -19,4 +19,8 @@ public class SchlagBefehl implements Befehl {
 		return "dann zähle ich mit";
 	}
 
+	@Override
+	public String abkuerzung() {
+		return "SB";
+	}
 }

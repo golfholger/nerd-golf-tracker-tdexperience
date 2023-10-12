@@ -8,4 +8,8 @@ public interface Befehl {
 
 	String beschreibung();
 
+	default String abkuerzung() {
+		return "";
+	}
+
 }
