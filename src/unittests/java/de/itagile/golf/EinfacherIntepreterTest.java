@@ -5,14 +5,10 @@ import static org.hamcrest.Matchers.instanceOf;
 
 import java.util.stream.Stream;
 
-import de.itagile.golf.operation.Hilfehinweis;
+import de.itagile.golf.operation.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-
-import de.itagile.golf.operation.Hilfe;
-import de.itagile.golf.operation.Lochwechsel;
-import de.itagile.golf.operation.Schlag;
 
 public class EinfacherIntepreterTest {
 
@@ -23,10 +19,12 @@ public class EinfacherIntepreterTest {
                 Arguments.of("Schlage Ball", Schlag.class),
                 Arguments.of("Nächstes Loch", Lochwechsel.class),
                 Arguments.of("Hilfe", Hilfe.class),
+                Arguments.of("Zeige Gesamtschlagzahl", GesamtschlaegeAnzeigen.class),
                 Arguments.of("Foo", Hilfehinweis.class),
                 Arguments.of("SB", Schlag.class),
                 Arguments.of("NL", Lochwechsel.class),
-                Arguments.of("H", Hilfe.class)
+                Arguments.of("H", Hilfe.class),
+                Arguments.of("ZG", GesamtschlaegeAnzeigen.class)
         );
     }
 

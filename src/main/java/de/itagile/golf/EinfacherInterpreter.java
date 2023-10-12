@@ -6,7 +6,6 @@ import de.itagile.golf.operation.Schlag;
 import java.util.HashMap;
 import java.util.Map;
 
-
 public class EinfacherInterpreter implements Interpreter {
 
 	private Map<String, Operation> operationen = new HashMap<>();

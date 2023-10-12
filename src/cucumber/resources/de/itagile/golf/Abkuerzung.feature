@@ -12,3 +12,7 @@ Funktionalität: Abkürzungen benutzen
   Szenario: Hilfe
     Wenn ich den Befehl "H" eingebe
     Dann sehe ich die Hilfe
+
+  Szenario: Gesamtschläge
+    Wenn ich den Befehl "ZG" eingebe
+    Dann sehe ich die Gesamtschlagzahl

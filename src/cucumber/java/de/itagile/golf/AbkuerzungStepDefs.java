@@ -27,4 +27,9 @@ public class AbkuerzungStepDefs {
     public void seheIchDieHilfe() {
         trackerDriver.assertThatAntwort(containsString("Ich reagiere auf"));
     }
+
+    @Dann("sehe ich die Gesamtschlagzahl")
+    public void seheIchDieGesamtschlagzahl() {
+        trackerDriver.assertThatAntwort(containsString("insgesamt 0 Schläge"));
+    }
 }
