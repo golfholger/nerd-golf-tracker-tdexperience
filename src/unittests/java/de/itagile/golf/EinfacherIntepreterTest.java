@@ -3,10 +3,9 @@ package de.itagile.golf;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.instanceOf;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.stream.Stream;
 
+import de.itagile.golf.operation.Hilfehinweis;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -23,7 +22,8 @@ public class EinfacherIntepreterTest {
 	    return Stream.of(
 	      Arguments.of("Schlage Ball", Schlag.class),
 	      Arguments.of("Nächstes Loch", Lochwechsel.class),
-	      Arguments.of("Hilfe", Hilfe.class)
+	      Arguments.of("Hilfe", Hilfe.class),
+	      Arguments.of("Foo", Hilfehinweis.class)
 	    );
 	}
 	
