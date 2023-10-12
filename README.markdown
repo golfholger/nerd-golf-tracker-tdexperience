@@ -11,9 +11,16 @@ Quotes Language: German
 ## Checklisten
 
 * Projekt auschecken und in Eclipse/IDEA importieren
-* in der Konsole `./gradlew` bzw. `gradlew.bat`aufrufen 
+* in der Konsole `./gradlew` bzw. `gradlew.bat` aufrufen 
 * in Idea oder Eclipse Unit Tests ausprobieren (Alle sind Grün)
 
 ## Build-Server
 
 * In Github selbst über Github-Workflows
+
+## Mitwirkende
+
+* Peter Fichtner
+* Oskar Pfeifer-Bley
+* Mario Gisch
+* Sven Günther
